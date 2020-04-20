@@ -5,7 +5,7 @@ require 'uri'
 require 'net/http'
 require 'openssl'
 
-BASE_URL = "https://uqms-backend.herokuapp.com"
+BASE_URL = "https://www.google.com.br/"
 
 
 
@@ -25,7 +25,7 @@ end
 RSpec.feature "Testing" do
   scenario "Checking if everything is working" do
 
-    resource = "/production/production_goal/production_line/3"
+    resource = "/search?q=google&oq=go&aqs=chrome.1.69i57j0l2j69i60l3.1467j0j7&sourceid=chrome&ie=UTF-8"
    
     response = do_request(resource)        
     puts response.read_body
