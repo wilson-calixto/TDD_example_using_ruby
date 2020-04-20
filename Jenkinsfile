@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('myStage'){
       steps {
-        sh 'ls -la' 
+        rspec
       }
     }
     stage('Build') {
       steps { 
-        sh 'ls' 
+        rspec 
       }
     }
   }
