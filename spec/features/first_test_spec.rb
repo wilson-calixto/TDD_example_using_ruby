@@ -30,6 +30,6 @@ RSpec.feature "Testing" do
     response = do_request(resource)        
     puts response.read_body
 
-    expect(true).to eq(false)
+    expect(true).to eq(true)
   end
 end
